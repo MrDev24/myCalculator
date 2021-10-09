@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        </head>
+        <title>My Calculator</title>
+        <body>
+            <div class="container">
+
+                    <h2>Calculator <i class="fas fa-calculator"></i></h2>
+                    <form class="calculatorForm" name="calculatorForm">
+                        <div class="screen">
+                            <input type="text" name="screen" class="screen" value="" readonly/>
+                        </div>
+                        <!--screen-->
+                        <br>
+                        
+                        <div class="btn">
+                            <button type="button"  name="num1"value="1" onclick="valueButton(this)">1</button>
+                            <button type="button" name="num2" value="2" onclick="valueButton(this)">2</button>
+                            <button type="button" name="num3" value="3" onclick="valueButton(this)">3</button>
+                            <button type="button" name="plus" value="+" onclick="valueButton(this)"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <div class="btn">
+                            <button type="button" name="num4" value="4" onclick="valueButton(this)">4</button>
+                            <button type="button" name="num5" value="5" onclick="valueButton(this)">5</button>
+                            <button type="button" name="num6" value="6" onclick="valueButton(this)">6</button>
+                            <button type="button" name="minus" value="-" onclick="valueButton(this)"><i class="fas fa-minus"></i></button>
+                        </div>
+                        <div class="btn">
+                            <button type="button" name="num7" value="7" onclick="valueButton(this)">7</button>
+                            <button type="button" name="num8" value="8" onclick="valueButton(this)">8</button>
+                            <button type="button" name="num9" value="9" onclick="valueButton(this)">9</button>
+                            <button type="button" name="mul" value="*" onclick="valueButton(this)"><i class="fas fa-times"></i></button>
+                        </div>
+                        <div class="btn">
+                            
+                            <button type="button" name="clear" value="clear" onclick="Clear()">Clear</button>
+                            <button type="button" name="num0" value="0" onclick="valueButton(this)">0</button>
+                            <button type="button" name="divide" value="/" onclick="valueButton(this)"><i class="fas fa-divide"></i></button>
+                            <button type="button" name="equal" value="=" onclick="Calcu()"><i class="fas fa-equals"></i></button>
+                        </form>
+                       
+            </div>
+          
+            
+            
+            
+            
+            <script src="main.js"></script>
+        </body>
+</html>
